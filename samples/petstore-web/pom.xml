@@ -1,0 +1,272 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.gwtgen.petstore</groupId>
+  <artifactId>petstore-web</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <name>petstore-web</name>
+  <url>http://maven.apache.org</url>
+
+ <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<gwt.version>2.6.0</gwt.version>
+		<hibernate.version>4.2.1.Final</hibernate.version>
+		<xml-apis.version>1.3.04</xml-apis.version>
+		<hibernate.validator.version>4.3.1.Final</hibernate.validator.version>
+		<compile.version>1.7</compile.version>
+		<commons-fileupload.version>1.2.2</commons-fileupload.version>
+		<commons-lang.version>3.0.1</commons-lang.version>
+		<poi.version>3.8</poi.version>
+		<jta.version>1.1</jta.version>
+		<validation-api.version>1.0.0.GA</validation-api.version>
+		<commons-codec.version>1.7</commons-codec.version>
+		<junit.version>4.8.1</junit.version>
+		 <gwt.style>OBF</gwt.style>
+    <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
+    
+		<javaee-api.version>6.0</javaee-api.version>
+		<javassist.version>3.15.0-GA</javassist.version>
+		<dom4j.version>1.6.1</dom4j.version>
+		<xml-apis.version>1.3.04</xml-apis.version>
+		<antlr.version>2.7.7</antlr.version>
+		<slf4j.version>1.7.5</slf4j.version>
+		
+		<commons-lang.version>3.0.1</commons-lang.version>
+		<commons-io.version>2.0.1</commons-io.version>
+		<commons-collections.version>3.2.1</commons-collections.version>
+		<commons-logging.version>1.1.1</commons-logging.version>
+		<cxf.version>2.7.4</cxf.version>
+		<guava.version>15.0</guava.version>
+		<jsr-305.version>2.0.1</jsr-305.version>
+		
+	</properties>
+
+<build>
+	<plugins>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>2.4.1</version>
+				<executions>
+					<execution>
+						<id>auto-clean</id>
+						<phase>pre-clean</phase>
+						<goals>
+							<goal>clean</goal>
+						</goals>
+						<configuration>
+							<filesets>
+								<fileset>
+									<directory>${basedir}/war/</directory>
+									<followSymlinks>false</followSymlinks>
+									<includes>
+										<include>petstore/**/*.*</include>
+										<include>WEB-INF/classes/**/*.*</include>
+										<include>WEB-INF/deploy/**/*.*</include>
+										<include>WEB-INF/lib/**/*.*</include>
+									</includes>
+								</fileset>
+								<fileset>
+									<directory>${basedir}/src/main/webapp/framework/bundles/</directory>
+									<followSymlinks>false</followSymlinks>
+									<includes>
+										<include>**/*.*</include>
+									</includes>
+								</fileset>
+							</filesets>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>
+				<configuration>
+					<!-- <packagingExcludes>**/*.class,WEB-INF/lib/slf4j-jcl-1.0.1.jar,WEB-INF/lib/hibernate-c3p0-${hibernate.version}.jar</packagingExcludes> -->
+					<packagingExcludes>**/*.class,WEB-INF/lib/slf4j-jcl-1.0.1.jar</packagingExcludes>
+					<packagingIncludes>**/*</packagingIncludes>
+					<warSourceDirectory>war</warSourceDirectory>
+					<webXml>war/WEB-INF/web.xml</webXml>
+				</configuration>
+			</plugin>
+		<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>gwt-maven-plugin</artifactId>
+				<version>${gwt.version}</version>
+				<dependencies>
+					<dependency>
+						<groupId>com.google.gwt</groupId>
+						<artifactId>gwt-user</artifactId>
+						<version>${gwt.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>com.google.gwt</groupId>
+						<artifactId>gwt-codeserver</artifactId>
+						<version>${gwt.version}</version>
+					</dependency>
+				</dependencies>
+
+				<configuration>
+					<modules>
+						<module>org.gwtgen.petstore.PetStore</module>
+					</modules>
+					<compileSourcesArtifacts>
+						<compileSourcesArtifact>com.hiperf:gwt-naked-core</compileSourcesArtifact>
+						<compileSourcesArtifact>org.gwtgen.petstore:petstore-common</compileSourcesArtifact>
+					</compileSourcesArtifacts>
+					<warSourceDirectory>war</warSourceDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>2.3.2</version>
+			<configuration>
+				<source>${compile.version}</source>
+				<target>${compile.version}</target>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+
+  <dependencies>
+  	<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-servlet</artifactId>
+			<version>${gwt.version}</version>
+		</dependency>
+		
+  	<dependency>
+  		<groupId>com.hiperf</groupId>
+		<artifactId>gwt-naked-core</artifactId>
+		<version>${gwt.version}</version>
+  	</dependency>
+    
+    <dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-servlet</artifactId>
+			<version>${gwt.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-user</artifactId>
+			<version>${gwt.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${hibernate.validator.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>${javassist.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>${validation-api.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>${dom4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>${commons-collections.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>${commons-logging.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>antlr</groupId>
+			<artifactId>antlr</artifactId>
+			<version>${antlr.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-jdk14</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>${commons-lang.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io.version}</version>
+		</dependency>
+    
+   		<dependency>
+   			<groupId>org.gwtgen.petstore</groupId>
+			  <artifactId>petstore-common</artifactId>
+			  <version>0.0.1-SNAPSHOT</version>
+   		</dependency>
+   		
+   		<!-- remove if you want to use container datasource and connection pool -->
+   		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-c3p0</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>2.2.9</version>
+    	</dependency>
+  </dependencies>
+</project>

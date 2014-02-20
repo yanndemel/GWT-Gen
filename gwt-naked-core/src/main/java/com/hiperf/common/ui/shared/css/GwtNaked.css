@@ -1,0 +1,905 @@
+@url buttonBgMdUrl button_bg_md;
+@url buttonBgMoUrl button_bg_mo;
+@url buttonBgNUrl button_bg_n;
+@url buttonOverUrl buttonOver;
+@url buttonUrl button;
+@url hborderUrl hborder;
+@url vborderUrl vborder;
+@url cornerUrl corner;
+@url vbarUrl vbar;
+@url blueGradientUrl blueGradient;
+@url grayGradientUrl grayGradient;
+@url ieUserSelectFixUrl ieUserSelectFix;
+@def defaultBg #d0e4f6;
+@def defaultBorderColor #27397a;
+@def warningColor #F72D41;
+
+
+/*.naked-button {
+    padding: 0px 4px 1px;
+    margin: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DDDDD8 #AFAFAF #797975;
+    background: #FDFDFA buttonBgNUrl repeat-x center bottom;
+    color: #000000;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: visible; /* keeps IE from making buttons too wide */
+   /* width:200px;
+}
+
+.naked-button:hover {
+    border-color: #ACBACF #768092 #0A0B19;
+    background: #EDFFFF buttonBgMoUrl repeat-x center bottom;
+    cursor:pointer;
+}
+
+.naked-button:active {
+    border-color:  #00000A #677183 #9DABC0;
+    background: #AABACD buttonBgMdUrl repeat-x center bottom;
+}
+
+.naked-button[disabled] {
+	cursor: default;
+    padding: 0px 4px 1px;
+    border: 1px solid #B9B9B4;
+    background: #E5E5E0  none;
+    color: #737373;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: visible; /* keeps IE from making buttons too wide */
+/*}*/
+
+.naked-button {
+	cursor: pointer;
+    background-color: #336699;
+    border: 0 none;
+    border-collapse: separate !important;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 100%;
+    text-align: center;
+    text-decoration: none;
+    height: 30px;
+    margin: 3px;
+    
+}
+
+.gwt-Button:hover {
+	opacity: 0.3;
+  	filter: alpha(opacity);
+ 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+}
+
+.naked-button:hover, .naked-button[disabled] {
+	opacity: 0.3;
+  	filter: alpha(opacity);
+ 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+}
+
+.naked-button[disabled] {
+	cursor: default;
+    background: #E5E5E0  none;
+    color: #737373;
+}
+
+.light-rounded {
+  border: 1px solid defaultBorderColor;
+  padding: 3px;  
+  vertical-align: top;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+}
+
+.large-button {
+    padding: 0px 4px 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DDDDD8 #AFAFAF #797975;
+    background: #FDFDFA buttonBgNUrl repeat-x center bottom;
+    color: #000000;
+    font-size: 11px;
+    overflow: visible; /* keeps IE from making buttons too wide */
+    width:150px;
+    height: 35px;
+}
+
+.large-button:hover {
+    border-color: #ACBACF #768092 #0A0B19;
+    background: #EDFFFF buttonBgMoUrl repeat-x center bottom;
+    cursor:pointer;
+}
+
+.large-button:active {
+    border-color:  #00000A #677183 #9DABC0;
+    background: #AABACD buttonBgMdUrl repeat-x center bottom;
+}
+
+.naked-decoratorPanel {
+}
+
+.naked-decoratorPanel .topCenter,
+.naked-decoratorPanel .bottomCenter {
+  background: hborderUrl repeat-x;
+}
+
+.naked-decoratorPanel .middleLeft,
+.naked-decoratorPanel .middleRight {
+  background: vborderUrl repeat-y;
+  width: 5px;
+}
+.naked-decoratorPanel .topLeftInner,
+.naked-decoratorPanel .topRightInner,
+.naked-decoratorPanel .bottomLeftInner,
+.naked-decoratorPanel .bottomRightInner {
+  width: 5px;
+  height: 5px;
+  zoom: 1;
+}
+
+.naked-decoratorPanel .topLeft {
+  background: cornerUrl no-repeat 0px -10px;
+  -background: cornerUrl no-repeat 0px -10px;
+}
+
+.naked-decoratorPanel .topRight {
+  background: cornerUrl no-repeat -5px -10px;
+  -background: cornerUrl no-repeat -5px -10px;
+}
+
+.naked-decoratorPanel .bottomLeft {
+  background: cornerUrl no-repeat 0px -5px;
+  -background: cornerUrl no-repeat 0px -5px;
+}
+
+.naked-decoratorPanel .bottomRight {
+  background: cornerUrl no-repeat -5px -5px;
+  -background: cornerUrl no-repeat -5px -5px;
+}
+
+* html .naked-decoratorPanel .topLeftInner,
+* html .naked-decoratorPanel .topRightInner,
+* html .naked-decoratorPanel .bottomLeftInner,
+* html .naked-decoratorPanel .bottomRightInner {
+  width: 5px;
+  height: 5px;
+  overflow: hidden;
+}
+
+
+body {
+	color: black;
+    background-color:white;
+    font-family:Verdana;
+    font-size:small;
+    text-align:center;
+    margin: 0px;
+	border: 0px;
+	padding: 0px;
+	direction: ltr;
+}
+
+a {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+.popup-title {
+	font-weight: bold;
+	color: black;
+	margin-bottom: 5px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.table {
+	border: solid;
+}
+
+.td {
+	text-align: center;
+}
+
+.image-right-align-pointer
+{
+    cursor                      :   pointer;
+    float: right;
+}
+
+.topMenu
+{
+    cursor :   pointer;
+   	float:right;
+   	margin: 0 1px 1px 0;
+   	padding: 0px;
+   	border: 0px thin #aaa;
+}
+
+.topMenu:hover, .custom-table-th:hover, .image-right-align-pointer:hover {
+  opacity: 0.3;
+  filter: alpha(opacity);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+}
+
+.custom-table {
+    border-width:0px;    
+    border-style:solid;
+    border-color:  rgb(39,57,122);
+    border-collapse: collapse;
+    background-color:white;
+    text-align:center;
+    font-size: 14px;
+}
+
+.custom-table-td {
+    border-style:none;
+	padding: 2px;
+    border-color:  rgb(219,235,249);
+    font-size:14px;
+}
+
+.local-id {
+	color:red;
+}
+
+.noWrap {
+	white-space: nowrap;
+}
+
+.custom-table-td-editable {
+	cursor: pointer;
+}
+.form-margin {
+	margin-left: 3px;
+}
+.custom-table-tr {
+	background-color: white;
+    /* cursor:default; */
+    height:20px;
+    text-align:center;
+}
+.custom-table-tr-even {
+	background-color: rgb(219,235,249);
+}
+.custom-table-tr:hover {
+	background-color: #CFCFCF;
+}
+
+.hover-color {
+	background-color: #CFCFCF;
+	padding: 0px;
+	margin: 0px;
+}
+
+.updatedRow {
+	background-color: #B3CCFF;
+	cursor:default;
+    height:20px;
+}
+
+.updatedRow:hover {
+	background-color: #CFCFCF;
+	cursor:default;
+    height:20px;
+}
+
+.removedRow {
+	background-color: #E0E0E0;
+	color:#C0C0C0;
+	cursor:default;
+    height:20px;
+}
+
+
+.custom-table-th {
+    /*border-width: 1px;*/
+	padding: 3px;
+	border-bottom: 3px solid white;
+    border-collapse: collapse;
+	/*background: rgb(39,57,122) buttonUrl repeat;
+	-background: rgb(39,57,122) buttonUrl repeat;*/
+	background-color:#003A7E;
+    color:white;
+    font-size:15px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.custom-table th {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.custom-table-th-drop-left {
+	border-left-style:solid;
+	border-left-color:gray;
+	border-left-width: 3px;
+	border-right-width: 1px;
+	padding: 3px;
+	border-right-style:solid;
+	border-right-color:black;
+	border-top-style:none;
+	border-bottom-style:none;
+    border-collapse: collapse;
+	background: rgb(39,57,122) buttonUrl repeat-x right top;
+	-background: rgb(39,57,122) buttonUrl repeat-x right top;
+    color:white;
+    font-weight:bold;
+    text-align: center;
+    cursor: move;
+}
+
+.custom-table-th-drop-right {
+	border-right-style:solid;
+	border-right-color:gray;
+	border-right-width: 3px;
+	border-left-width: 1px;
+	padding: 3px;
+	border-left-style:solid;
+	border-left-color:black;
+	border-top-style:none;
+	border-bottom-style:none;
+	background: rgb(39,57,122) buttonUrl repeat-x right top;
+	-background: rgb(39,57,122) buttonUrl repeat-x right top;
+    color:white;
+    font-weight:bold;
+    text-align: center;
+    cursor: move;
+}
+
+.form-table-title {
+	width:auto;
+	max-width: 30%;
+	color:black;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.3em;
+	font-variant:small-caps;
+	background: rgb(39,57,122);
+	-background: rgb(39,57,122);
+    color:white;
+	white-space: nowrap;
+	cursor: default;
+}
+
+.form-table-title-little {
+	width:auto;
+	max-width: 30%;
+	color:black;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1em;
+	font-variant:normal;
+	background: rgb(39,57,122);
+	-background: rgb(39,57,122);
+    color:white;
+	white-space: nowrap;
+	cursor: default;
+}
+
+.form-table-th {
+	font-size: 1em;
+	font-weight: bold;    
+	padding: 2px;
+	margin-left:2px;	
+    border-style: none;
+    white-space: nowrap;    
+}
+
+.form-table-td {
+	font-size: 1em;
+	font-weight: normal;    
+	padding: 2px;
+	margin-left:5px;	
+    border-style: none;
+    white-space: normal;
+    text-align: left;
+}
+
+.form-mandatory-th {
+	font-size: 1em;
+	font-weight: bold;
+    border-left-width:1px;
+    border-right-width:1px;
+	padding: 2px;
+	border-left-style: none;
+	border-right-style:dashed;
+    border-color:  rgb(219,235,249);
+    white-space: nowrap;
+}
+
+
+.gwt-TextBox-selected {
+    background-color: rgb(232, 241, 250);
+    border-color:  rgb(183,213,241);
+    cursor:pointer;
+}
+
+.gwt-TextBox-warning, .gwt-ListBox-warning, .gwt-Image-warning, .gwt-TextArea-warning, .gwt-Label-warning, .gwt-PasswordTextBox, .gwt-CheckBox-warning, .gwt-DateBox-warning {
+	border-style: solid solid solid solid;
+	border-color:warningColor;
+	border-width:2px;
+}
+
+.gwt-Label-warning {
+	height: 20px;
+}
+
+.gwt-ListBox .custom-ListBox {
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+}
+
+.custom-PopupPanel {
+	padding: 0px 0px 0px 0px;
+	border:0px;
+	background-color:white;
+	cursor: pointer;
+}
+
+.naked-decoratedPopupPanel-warning .popupMiddleCenter {
+  padding: 3px;
+  background: warningColor;
+}
+
+.paging-textbox {
+    width:30px;
+    font-size:10;
+}
+
+.menu-icon {
+    width:16px;
+    height:16px;
+    cursor:pointer;
+    vertical-align:middle;
+}
+
+
+.fullCell {
+	width: inherit;
+	text-align:center;
+	vertical-align: center;
+	white-space: inherit;
+}
+
+.noborder {
+	border: none;
+}
+
+.cursor-default {
+	cursor: default;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.cursor-move {
+	cursor: move;
+}
+
+.center-move {
+	cursor: move;
+	vertical-align: middle;
+	height: 100%;
+}
+
+
+.config-table {
+    border-width:1px;
+    border-style: dotted;
+    border-color:  black;
+    border-collapse: collapse;
+    background-color:inherit;
+    text-align:left;
+}
+
+.config-table-th {
+    padding: 2px;
+	background-color: rgb(183,213,241);
+    color:#08088A;
+    font-weight:bold;
+    text-align: center;
+    cursor:default;
+}
+
+.config-table-border-left {
+    border-left-width:1px;
+    border-left-style: dashed;
+    border-left-color:  rgb(219,235,249);
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.font-normal {
+	font-weight: normal;
+}
+
+.font-italic {
+	font-weight: lighter;
+	font-style: italic;
+}
+
+.naked-popupPanel {
+  border: 3px solid #C3D9FF;
+  padding: 3px;
+  background: white;
+}
+
+.child-custom-table {
+  border-right: 3px solid defaultBg;
+  border-left: 3px solid defaultBg;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:5px;
+  padding-right: 5px;
+  position: relative;
+  background: defaultBg;
+  vertical-align: top;
+}
+
+.child-custom-table td, tr {
+	padding:3px;
+}
+
+.naked-dialogBox {
+  /*border: 2px solid defaultBorderColor;
+  padding: 3px;
+  background: defaultBg;
+  vertical-align: top;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px; */
+  background: none repeat scroll 0 0 defaultBg;
+    border: 5px solid defaultBorderColor;
+    border-radius: 10px;
+    color: #333333;
+    margin: 1em 0 3em;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left:15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.naked-dialogBox-warning {
+	border-color: warningColor;
+	background: #FFF3E7;
+}
+
+.root-table {
+	/*border: 1px solid defaultBorderColor;
+	border-radius: 11px; */
+	border: 0px none;
+	border-spacing: 3px;
+	padding: 3px;
+	margin-top: 3px;
+}
+
+.custom-table {
+    border-width:0px;    
+    border-style:solid;
+    /*border-color:  rgb(39,57,122);*/
+    border-collapse: collapse;
+    background-color:white;
+    text-align:center;
+}
+
+.naked-dialogBoxGlass {
+  background-color: #000000;
+  opacity: 0.3;
+  filter: alpha(opacity);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+}
+
+
+.naked-dialogBox .Caption {
+  background: defaultBorderColor;
+  -background: defaultBorderColor;
+  color:white;
+  font-weight:bold;
+  font-size:1.2em;
+  text-transform:uppercase;
+  padding:0px;
+  pointer: move;
+  height: 40px; 
+}
+
+.naked-dialogBox td {
+	vertical-align: middle;
+}
+
+.custom-button {
+	margin : 2px;
+	cursor:pointer;
+}
+
+.custom-button:hover {
+  opacity: 0.3;
+  filter: alpha(opacity);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+}
+
+.little-button {
+	margin : 1px;
+	cursor:pointer;
+}
+
+.little-button:hover {
+  opacity: 0.3;
+  filter: alpha(opacity);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+}
+
+.close-button {
+	cursor:pointer;
+	vertical-align: top;
+}
+
+.close-button:hover {
+  opacity: 0.3;
+  filter: alpha(opacity);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=30)";
+}
+
+
+.small-margin {
+	margin: 3px;
+}
+
+.top-menuItem {
+	width:auto;
+	max-width: 30%;
+	color:black;
+	text-align: left;
+	font:menu;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1em;
+	/* font-variant:small-caps;*/
+	white-space: nowrap;
+	cursor: default;
+}
+
+.ie6clear{ clear:both; height:0; overflow:hidden; }
+
+.top-submenuItem {
+	width:auto;
+	max-width: 30%;
+	color:black;
+	text-align: left;
+	font:menu;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.9em;
+	/* font-variant:small-caps;*/
+	white-space: nowrap;
+	cursor: default;
+}
+
+.top-menuItem a {
+
+}
+
+.global-header {
+	background: #FFFFFF vbarUrl repeat-x top left;
+    min-width: 920px;
+    height: 550px;
+}
+
+.global-footer {
+    padding: 0px 0px 6px 15px;
+    text-align: left;
+    color: #B2CBDB;
+    background-color: #185E87;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.global-left {
+	background: #FFFFFF vbarUrl repeat-x top left;
+	height: 100%;
+}
+
+.search-panel {
+	background-color: white;
+}
+
+.filter-tree {
+	border:thin solid black;
+}
+
+.filter-tree-item {
+	padding:0px;
+	border: none;
+	margin: 0px;
+}
+
+.filter-table {
+	background-color: defaultBg;
+	border:none solid black;
+	width: 100%;
+}
+
+.underline-nocenter {
+	text-decoration: underline;
+	white-space:nowrap;
+	cursor:pointer;
+}
+
+.underline {
+	text-align:center;
+	text-decoration: underline;
+	white-space:nowrap;
+	cursor:pointer;
+}
+
+.disclosureGrid {
+	border-collapse: collapse;
+	border-style:solid;
+	border-color: black;
+	border-width: 1px;
+	text-align: left;
+	width: 100%;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+
+.naked-dialogBoxOld .Caption {
+  background: defaultBorderColor;
+  -background: defaultBorderColor;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-variant: small-caps;
+  padding: 0px;
+  pointer: move;
+}
+.naked-dialogBoxOld .dialogContent {
+    padding: 0px;
+	border:none;
+   	vertical-align: top;
+}
+.naked-dialogBoxOld .dialogMiddleCenter {
+  padding: 0px;
+  background: defaultBg;
+  vertical-align: top;
+}
+.naked-dialogBoxOld .dialogBottomCenter {
+  background: hborderUrl repeat-x 0px -5px;
+  -background: hborderUrl repeat-x 0px -5px;
+}
+.naked-dialogBoxOld .dialogMiddleLeft {
+  background: vborderUrl repeat-y;
+}
+.naked-dialogBoxOld .dialogMiddleRight {
+  background: vborderUrl repeat-y -5px 0px;
+  -background: vborderUrl repeat-y -5px 0px;
+}
+.naked-dialogBoxOld .dialogTopLeftInner {
+  background: defaultBorderColor;
+  -background: defaultBorderColor;
+  width: 5px;
+  height: 9px;
+  zoom: 1;
+}
+
+.naked-dialogBoxOld .dialogTopCenterInner {
+  background: defaultBorderColor;
+  -background: defaultBorderColor;
+}
+
+.naked-dialogBoxOld .dialogTopRightInner {
+  background: defaultBorderColor;
+  -background: defaultBorderColor;
+  width: 5px;
+  height: 9px;
+  zoom: 1;
+}
+
+.naked-dialogBoxOld .dialogBottomLeftInner {
+ width: 5px;
+  height: 5px;
+  zoom: 1;
+}
+.naked-dialogBoxOld .dialogBottomRightInner {
+  width: 5px;
+  height: 5px;
+  zoom: 1;
+}
+.naked-dialogBoxOld .dialogTopLeft {
+  background: cornerUrl no-repeat 0px -11px;
+  -background: cornerUrl no-repeat 0px -11px;
+  border-bottom: medium solid defaultBorderColor;
+}
+.naked-dialogBoxOld .dialogTopRight {
+  background: cornerUrl no-repeat -5px -11px;
+  -background: cornerUrl no-repeat -5px -11px;
+  border-bottom: medium solid defaultBorderColor;
+}
+.naked-dialogBoxOld .dialogBottomLeft {
+  background: cornerUrl no-repeat 0px -5px;
+  -background: cornerUrl no-repeat 0px -5px;
+}
+.naked-dialogBoxOld .dialogBottomRight {
+  background: cornerUrl no-repeat -5px -15px;
+  -background: cornerUrl no-repeat -5px -15px;
+}
+
+/*.naked-dialogBoxOld .dialogTopLeft {
+  background: defaultBorderColor;
+  -background: defaultBorderColor;
+  border-bottom: medium solid defaultBorderColor;
+}
+.naked-dialogBoxOld .dialogTopRight {
+ background: defaultBorderColor;
+  -background: defaultBorderColor;
+  border-bottom: medium solid defaultBorderColor;
+}
+.naked-dialogBoxOld .dialogBottomLeft {
+  background: defaultBorderColor;
+  -background: defaultBorderColor;
+}
+.naked-dialogBoxOld .dialogBottomRight {
+  background: defaultBorderColor;
+  -background: defaultBorderColor;
+}*/
+
+* html .naked-dialogBoxOld .dialogTopLeftInner {
+  background: defaultBorderColor;
+  -background: defaultBorderColor;
+  width: 5px;
+  height: 9px;
+  overflow: hidden;
+}
+* html .naked-dialogBoxOld .dialogTopRightInner {
+  background: defaultBorderColor;
+  -background: defaultBorderColor;
+  width: 5px;
+  height: 9px;
+  overflow: hidden;
+}
+* html .naked-dialogBoxOld .dialogBottomLeftInner {
+  width: 5px;
+  height: 8px;
+  overflow: hidden;
+}
+
+* html .naked-dialogBoxOld .dialogBottomRightInner {
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.unselectable {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  behavior: url(ieUserSelectFix.htc);
+}
+
+

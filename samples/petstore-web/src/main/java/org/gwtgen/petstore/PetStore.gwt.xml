@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module rename-to="petstore">
+	<inherits name="com.google.gwt.i18n.I18N" />
+	<inherits name="com.google.gwt.user.User" />
+	<inherits name="com.google.gwt.user.theme.standard.Standard" />
+	<extend-property name="locale" values="en,fr" />
+
+	<set-property-fallback name="locale" value="en" />
+
+	<source path="client" />
+	<source path="domain" />
+
+	<entry-point class="org.gwtgen.petstore.client.PetStore" />
+
+	<inherits name="com.hiperf.common.ui.Naked" />
+
+
+	<generate-with class="com.hiperf.common.rebind.WrapperGenerator">
+		<when-type-assignable class="com.hiperf.common.ui.client.INakedObject" />
+	</generate-with>
+
+	<generate-with class="com.hiperf.common.rebind.WrapperContextGenerator">
+		<when-type-assignable class="com.hiperf.common.ui.shared.WrapperContext" />
+	</generate-with>
+
+	<set-property name="user.agent" value="gecko1_8,safari,ie9" />
+
+</module>

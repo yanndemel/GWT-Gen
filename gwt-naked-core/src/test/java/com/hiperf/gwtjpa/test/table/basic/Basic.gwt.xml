@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module>
+  <inherits name="com.google.gwt.i18n.I18N"/>
+  <inherits name="com.google.gwt.user.User"/>
+
+  <source path="domain" />
+  <source path="client" />
+
+  <inherits name="com.hiperf.common.ui.Naked"/>
+  
+  	<generate-with class="com.hiperf.common.rebind.WrapperGenerator">
+		<when-type-assignable class="com.hiperf.common.ui.client.INakedObject" />
+	</generate-with>
+
+	<generate-with class="com.hiperf.common.rebind.WrapperContextGenerator">
+		<when-type-assignable class="com.hiperf.common.ui.shared.WrapperContext" />
+	</generate-with>
+
+</module>

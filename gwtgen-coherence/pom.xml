@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.hiperf.gwtgen</groupId>
+  <artifactId>gwtgen-coherence</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>gwtgen-coherence</name>
+  <url>http://maven.apache.org</url>
+
+<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<gwt.version>2.6.0</gwt.version>
+		<xml-apis.version>1.3.04</xml-apis.version>
+		<coherence.version>3.6.1</coherence.version>
+		<compile.version>1.7</compile.version>
+		<jta.version>1.1</jta.version>
+		<validation-api.version>1.0.0.GA</validation-api.version>
+		<commons-codec.version>1.7</commons-codec.version>
+		<junit.version>4.8.1</junit.version>
+		<javaee-api.version>6.0</javaee-api.version>
+		 <gwt.style>OBF</gwt.style>
+    <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
+		
+	</properties>
+
+  <dependencies>
+  <dependency>
+						<groupId>javax</groupId>
+						<artifactId>javaee-api</artifactId>
+						<version>${javaee-api.version}</version>
+					</dependency>
+					<dependency>
+				  		<groupId>com.hiperf</groupId>
+						<artifactId>gwt-naked-core</artifactId>
+						<version>${gwt.version}</version>
+					</dependency>
+    <dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>coherence</artifactId>
+			<version>${coherence.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-user</artifactId>
+			<version>${gwt.version}</version>
+			<scope>provided</scope>
+		</dependency>
+  </dependencies>
+</project>
