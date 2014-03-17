@@ -4,7 +4,7 @@ import com.google.gwt.user.client.ui.Label;
 
 
 /**
- * Interface implemented by the widgets wrapping a {@link com.hiperf.common.ui.client.INakedObject}
+ * Interface implemented by the widgets wrapping a {@link org.gwtgen.api.shared.INakedObject}
  * */
 public interface ILinkedCell extends ICell {
 	IWrapper getParentWrapper();

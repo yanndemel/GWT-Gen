@@ -11,9 +11,10 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.hiperf.common.ui.client.IFieldInfo;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IWrapper;
 import com.hiperf.common.ui.client.ObjectsToPersist;
 import com.hiperf.common.ui.client.event.WrapperObjectAddedEvent;

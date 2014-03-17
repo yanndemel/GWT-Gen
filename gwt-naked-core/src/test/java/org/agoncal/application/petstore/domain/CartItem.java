@@ -3,7 +3,7 @@ package org.agoncal.application.petstore.domain;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
-import com.hiperf.common.ui.client.INakedObject;
+import org.gwtgen.api.shared.INakedObject;
 
 
 /**

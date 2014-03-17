@@ -1,5 +1,7 @@
 package com.hiperf.common.ui.client;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.HTMLTable.CellFormatter;
 import com.google.gwt.user.client.ui.HTMLTable.ColumnFormatter;

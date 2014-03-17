@@ -11,6 +11,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.event.dom.client.ContextMenuEvent;
@@ -37,7 +39,6 @@ import com.hiperf.common.ui.client.IClassInfo;
 import com.hiperf.common.ui.client.ICustomCell;
 import com.hiperf.common.ui.client.IFieldInfo;
 import com.hiperf.common.ui.client.ILinkedCell;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IRowFormatter;
 import com.hiperf.common.ui.client.IUpdateHandler;
 import com.hiperf.common.ui.client.IWrappedTable;

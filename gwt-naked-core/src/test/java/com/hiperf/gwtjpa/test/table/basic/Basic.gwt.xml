@@ -10,7 +10,7 @@
   <inherits name="com.hiperf.common.ui.Naked"/>
   
   	<generate-with class="com.hiperf.common.rebind.WrapperGenerator">
-		<when-type-assignable class="com.hiperf.common.ui.client.INakedObject" />
+		<when-type-assignable class="org.gwtgen.api.shared.INakedObject" />
 	</generate-with>
 
 	<generate-with class="com.hiperf.common.rebind.WrapperContextGenerator">

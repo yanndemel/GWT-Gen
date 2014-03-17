@@ -6,6 +6,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
@@ -32,7 +34,6 @@ import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.hiperf.common.ui.client.ICommitHandler;
 import com.hiperf.common.ui.client.IFieldInfo;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IUpdateHandler;
 import com.hiperf.common.ui.client.IWrapper;
 import com.hiperf.common.ui.client.event.HideLoadingPopupEvent;

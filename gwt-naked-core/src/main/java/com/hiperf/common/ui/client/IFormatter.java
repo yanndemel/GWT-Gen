@@ -7,8 +7,8 @@ import com.hiperf.common.ui.client.exception.ParseException;
 /**
  * Base interface for Formatters
  * 
- * If no formatter is provided in the {@link com.hiperf.common.ui.shared.annotation.UIAttribute} 
- * annotation of a getter of a {@link com.hiperf.common.ui.client.INakedObject} then the formatter 
+ * If no formatter is provided in the {@link org.gwtgen.api.shared.UIAttribute} 
+ * annotation of a getter of a {@link org.gwtgen.api.shared.INakedObject} then the formatter 
  * corresponding to the data type will be used
  * <p>
  * <b>example:</b><br>
@@ -20,7 +20,7 @@ import com.hiperf.common.ui.client.exception.ParseException;
  * 
  * }<br>
  * 
- *  @see com.hiperf.common.ui.shared.annotation.UIAttribute
+ *  @see org.gwtgen.api.shared.UIAttribute
  * */
 public interface IFormatter<T> {
 	

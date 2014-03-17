@@ -14,9 +14,9 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlTransient;
 
-import com.hiperf.common.ui.client.INakedObject;
-import com.hiperf.common.ui.shared.annotation.UIAttribute;
-import com.hiperf.common.ui.shared.annotation.UIClass;
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.UIAttribute;
+import org.gwtgen.api.shared.UIClass;
 
 @Entity
 @Table(name = "HIP_LABELS")

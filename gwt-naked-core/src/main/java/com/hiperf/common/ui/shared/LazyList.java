@@ -5,8 +5,9 @@ import java.util.Collection;
 import java.util.List;
 import java.util.ListIterator;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.hiperf.common.ui.client.AbstractLazyCollection;
-import com.hiperf.common.ui.client.INakedObject;
 
 public class LazyList<T extends INakedObject> extends AbstractLazyCollection<T> implements List {
 

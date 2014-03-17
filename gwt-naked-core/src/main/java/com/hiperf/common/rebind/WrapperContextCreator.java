@@ -7,6 +7,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.MessagesProvider;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.ext.GeneratorContext;
 import com.google.gwt.core.ext.TreeLogger;
@@ -17,7 +20,6 @@ import com.google.gwt.user.rebind.SourceWriter;
 import com.hiperf.common.ui.client.DataType;
 import com.hiperf.common.ui.client.IFieldInfo;
 import com.hiperf.common.ui.client.INakedLabels;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IRowFormatter;
 import com.hiperf.common.ui.client.IUpdateHandler;
 import com.hiperf.common.ui.client.IValidator;
@@ -34,7 +36,6 @@ import com.hiperf.common.ui.client.validation.ValidatorFactory;
 import com.hiperf.common.ui.client.widget.ICustomForm;
 import com.hiperf.common.ui.shared.StringParamsAbstractValidator;
 import com.hiperf.common.ui.shared.WidgetFactory;
-import com.hiperf.common.ui.shared.annotation.MessagesProvider;
 import com.hiperf.common.ui.shared.util.LinkedFileInfo;
 
 public class WrapperContextCreator extends WrapperCreator {

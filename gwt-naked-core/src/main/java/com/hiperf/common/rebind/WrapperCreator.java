@@ -36,6 +36,15 @@ import javax.validation.constraints.Null;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.NotEmpty;
+import org.gwtgen.api.shared.UIAttribute;
+import org.gwtgen.api.shared.UIClass;
+import org.gwtgen.api.shared.UILinkedFile;
+import org.gwtgen.api.shared.UIManyToMany;
+import org.gwtgen.api.shared.UIManyToOne;
+import org.gwtgen.api.shared.Unique;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.ext.GeneratorContext;
 import com.google.gwt.core.ext.TreeLogger;
@@ -58,7 +67,6 @@ import com.hiperf.common.rebind.AttributeInfo.ValidatorInfo;
 import com.hiperf.common.ui.client.DataType;
 import com.hiperf.common.ui.client.IFieldInfo;
 import com.hiperf.common.ui.client.ILazy;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IWrapper;
 import com.hiperf.common.ui.client.IWrapperListModel;
 import com.hiperf.common.ui.client.WrapperUpdatedHandler;
@@ -91,13 +99,6 @@ import com.hiperf.common.ui.shared.PersistenceManager;
 import com.hiperf.common.ui.shared.RegExpValidator;
 import com.hiperf.common.ui.shared.WrappedObjectsRepository;
 import com.hiperf.common.ui.shared.WrapperContext;
-import com.hiperf.common.ui.shared.annotation.NotEmpty;
-import com.hiperf.common.ui.shared.annotation.UIAttribute;
-import com.hiperf.common.ui.shared.annotation.UIClass;
-import com.hiperf.common.ui.shared.annotation.UILinkedFile;
-import com.hiperf.common.ui.shared.annotation.UIManyToMany;
-import com.hiperf.common.ui.shared.annotation.UIManyToOne;
-import com.hiperf.common.ui.shared.annotation.Unique;
 
 
 public class WrapperCreator {

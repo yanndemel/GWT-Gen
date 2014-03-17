@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 import java.util.Comparator;
 import java.util.logging.Logger;
 
-import com.hiperf.common.ui.client.INakedObject;
+import org.gwtgen.api.shared.INakedObject;
 
 public class NakedObjectComparator implements Comparator<INakedObject> {
 

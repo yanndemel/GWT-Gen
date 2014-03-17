@@ -8,8 +8,8 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import com.hiperf.common.ui.client.INakedObject;
-import com.hiperf.common.ui.shared.annotation.UIAttribute;
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.UIAttribute;
 
 /**
  * @author Antonio Goncalves

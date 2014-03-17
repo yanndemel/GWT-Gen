@@ -1,7 +1,8 @@
 package com.hiperf.common.ui.client.model;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.hiperf.common.ui.client.IClassInfo;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IRowFormatter;
 import com.hiperf.common.ui.client.IUpdateHandler;
 

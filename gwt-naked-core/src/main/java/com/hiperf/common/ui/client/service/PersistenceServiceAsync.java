@@ -4,8 +4,9 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.ObjectsToPersist;
 import com.hiperf.common.ui.shared.HeaderInfo;
 import com.hiperf.common.ui.shared.model.Filter;

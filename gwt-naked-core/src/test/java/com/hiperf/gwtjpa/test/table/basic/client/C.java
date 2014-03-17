@@ -11,10 +11,11 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-import com.hiperf.common.ui.client.INakedObject;
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.NotEmpty;
+import org.gwtgen.api.shared.UIAttribute;
+
 import com.hiperf.common.ui.client.i18n.INakedConstants;
-import com.hiperf.common.ui.shared.annotation.NotEmpty;
-import com.hiperf.common.ui.shared.annotation.UIAttribute;
 
 public class C implements INakedObject {
 

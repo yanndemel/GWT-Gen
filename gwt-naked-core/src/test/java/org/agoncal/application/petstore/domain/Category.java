@@ -14,8 +14,8 @@ import javax.persistence.OrderBy;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import com.hiperf.common.ui.client.INakedObject;
-import com.hiperf.common.ui.shared.annotation.NotEmpty;
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.NotEmpty;
 
 /**
  * @author Antonio Goncalves

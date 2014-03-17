@@ -11,10 +11,10 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlTransient;
 
-import com.hiperf.common.ui.client.INakedObject;
-import com.hiperf.common.ui.shared.annotation.NotEmpty;
-import com.hiperf.common.ui.shared.annotation.UIAttribute;
-import com.hiperf.common.ui.shared.annotation.UIClass;
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.NotEmpty;
+import org.gwtgen.api.shared.UIAttribute;
+import org.gwtgen.api.shared.UIClass;
 
 /**
  * @author Antonio Goncalves

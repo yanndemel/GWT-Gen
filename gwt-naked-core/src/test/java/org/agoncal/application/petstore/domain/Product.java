@@ -17,7 +17,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlTransient;
 
-import com.hiperf.common.ui.client.INakedObject;
+import org.gwtgen.api.shared.INakedObject;
 
 /**
  * @author Antonio Goncalves

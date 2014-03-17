@@ -3,7 +3,7 @@ package com.hiperf.common.ui.server.storage.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.hiperf.common.ui.client.INakedObject;
+import org.gwtgen.api.shared.INakedObject;
 
 public class ObjectsToAdd {
 

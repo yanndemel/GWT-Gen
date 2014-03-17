@@ -1,7 +1,8 @@
 package com.hiperf.common.ui.client.event;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.event.shared.GwtEvent;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IWrappedTableEvent;
 import com.hiperf.common.ui.client.IWrapper;
 

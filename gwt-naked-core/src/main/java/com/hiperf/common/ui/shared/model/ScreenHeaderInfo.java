@@ -18,10 +18,11 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
-import com.hiperf.common.ui.client.INakedObject;
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.UIAttribute;
+import org.gwtgen.api.shared.UIClass;
+
 import com.hiperf.common.ui.shared.CommonUtil;
-import com.hiperf.common.ui.shared.annotation.UIAttribute;
-import com.hiperf.common.ui.shared.annotation.UIClass;
 
 @Entity
 @Table(name = "HIP_SCI")

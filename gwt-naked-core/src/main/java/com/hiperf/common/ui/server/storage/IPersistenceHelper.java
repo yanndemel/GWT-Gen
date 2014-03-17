@@ -15,8 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.fileupload.FileItem;
+import org.gwtgen.api.shared.INakedObject;
 
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.ObjectsToPersist;
 import com.hiperf.common.ui.client.exception.PersistenceException;
 import com.hiperf.common.ui.server.tx.TransactionContext;

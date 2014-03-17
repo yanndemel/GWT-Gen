@@ -17,12 +17,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.hiperf.common.ui.client.INakedObject;
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.UIManyToMany;
+import org.gwtgen.api.shared.UIManyToOne;
+
 import com.hiperf.common.ui.client.ObjectsToPersist;
 import com.hiperf.common.ui.client.exception.PersistenceException;
 import com.hiperf.common.ui.server.util.sequence.IdGenerator;
-import com.hiperf.common.ui.shared.annotation.UIManyToMany;
-import com.hiperf.common.ui.shared.annotation.UIManyToOne;
 import com.hiperf.common.ui.shared.util.CollectionInfo;
 import com.hiperf.common.ui.shared.util.NakedObjectsList;
 

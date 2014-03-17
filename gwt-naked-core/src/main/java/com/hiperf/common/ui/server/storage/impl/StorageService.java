@@ -32,8 +32,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.fileupload.FileItem;
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.UIManyToMany;
+import org.gwtgen.api.shared.UIManyToOne;
 
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.ObjectsToPersist;
 import com.hiperf.common.ui.client.exception.PersistenceException;
 import com.hiperf.common.ui.server.listener.GlobalParams;
@@ -46,8 +48,6 @@ import com.hiperf.common.ui.server.tx.TransactionContext;
 import com.hiperf.common.ui.server.util.IdHolder;
 import com.hiperf.common.ui.shared.HeaderInfo;
 import com.hiperf.common.ui.shared.IConstants;
-import com.hiperf.common.ui.shared.annotation.UIManyToMany;
-import com.hiperf.common.ui.shared.annotation.UIManyToOne;
 import com.hiperf.common.ui.shared.model.Filter;
 import com.hiperf.common.ui.shared.model.LanguageEnum;
 import com.hiperf.common.ui.shared.model.ScreenLabels;

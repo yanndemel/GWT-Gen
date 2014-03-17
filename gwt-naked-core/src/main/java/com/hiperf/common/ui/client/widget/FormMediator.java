@@ -5,9 +5,10 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.hiperf.common.ui.client.ICell;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IWrappedObjectForm;
 import com.hiperf.common.ui.client.IWrapper;
 import com.hiperf.common.ui.client.WrapperUpdatedHandler;

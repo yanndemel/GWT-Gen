@@ -4,10 +4,11 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.ObjectsToPersist;
 import com.hiperf.common.ui.client.exception.PersistenceException;
 import com.hiperf.common.ui.shared.HeaderInfo;

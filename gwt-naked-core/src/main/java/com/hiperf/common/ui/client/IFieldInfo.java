@@ -7,7 +7,7 @@ import com.hiperf.common.ui.shared.util.LinkedFileInfo;
 
 
 /**
- * Information retrieved from the {@link com.hiperf.common.ui.shared.annotation.UIAttribute} annotation (if present),
+ * Information retrieved from the {@link org.gwtgen.api.shared.UIAttribute} annotation (if present),
  * from the JPA mapping (if present) and from the fields/getters/setters data types
  *
  * Accessible for each class via {@link com.hiperf.common.ui.shared.WrapperContext#getFieldInfoByName()}

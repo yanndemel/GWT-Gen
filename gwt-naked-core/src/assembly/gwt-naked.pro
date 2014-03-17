@@ -58,10 +58,10 @@
 # typically classes that are dynamically created using Class.forName:
 
 # -keep class com.hiperf.common.ui.server.util.sequence.*
-# -keep interface com.hiperf.common.ui.client.INakedObject
+# -keep interface org.gwtgen.api.shared.INakedObject
 # -keep class com.hiperf.common.ui.shared.AbstractEntity
 # -keep public class * extends com.hiperf.common.ui.shared.AbstractEntity
-# -keep class * implements com.hiperf.common.ui.client.INakedObject
+# -keep class * implements org.gwtgen.api.shared.INakedObject
 -keep class * implements com.google.gwt.user.client.rpc.IsSerializable
 -keep class * extends com.google.gwt.core.ext.Generator
 -keep class com.hiperf.common.ui.client.**

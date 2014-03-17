@@ -20,7 +20,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-import com.hiperf.common.ui.client.INakedObject;
+import org.gwtgen.api.shared.INakedObject;
+
 import com.hiperf.common.ui.client.exception.ValidationException;
 import com.hiperf.common.ui.client.i18n.INakedConstants;
 

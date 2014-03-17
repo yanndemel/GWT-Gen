@@ -43,8 +43,10 @@ import org.apache.poi.ss.usermodel.RichTextString;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.UIAttribute;
+import org.gwtgen.api.shared.UIClass;
 
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.exception.PersistenceException;
 import com.hiperf.common.ui.server.storage.IImportService;
 import com.hiperf.common.ui.server.storage.IImportValidator;
@@ -53,8 +55,6 @@ import com.hiperf.common.ui.server.storage.ImportValidationException;
 import com.hiperf.common.ui.server.tx.ITransaction;
 import com.hiperf.common.ui.server.tx.TransactionContext;
 import com.hiperf.common.ui.server.util.IOUtils;
-import com.hiperf.common.ui.shared.annotation.UIAttribute;
-import com.hiperf.common.ui.shared.annotation.UIClass;
 import com.hiperf.common.ui.shared.util.Id;
 
 public class ImportService implements IImportService {

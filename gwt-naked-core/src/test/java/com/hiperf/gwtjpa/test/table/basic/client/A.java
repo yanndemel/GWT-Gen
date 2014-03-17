@@ -3,8 +3,8 @@ package com.hiperf.gwtjpa.test.table.basic.client;
 import java.util.Date;
 import java.util.Set;
 
-import com.hiperf.common.ui.client.INakedObject;
-import com.hiperf.common.ui.shared.annotation.UIAttribute;
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.UIAttribute;
 
 public class A implements INakedObject {
 

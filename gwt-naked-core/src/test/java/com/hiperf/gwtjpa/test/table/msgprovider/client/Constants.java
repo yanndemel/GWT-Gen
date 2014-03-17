@@ -1,8 +1,9 @@
 package com.hiperf.gwtjpa.test.table.msgprovider.client;
 
+import org.gwtgen.api.shared.MessagesProvider;
+
 import com.google.gwt.core.client.GWT;
 import com.hiperf.common.ui.client.INakedLabels;
-import com.hiperf.common.ui.shared.annotation.MessagesProvider;
 
 @MessagesProvider(name = "com.hiperf.gwtjpa.test.table.msgprovider.client.Constants.constants")
 public class Constants implements INakedLabels {

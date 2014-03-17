@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -29,7 +31,6 @@ import com.hiperf.common.ui.client.ICell;
 import com.hiperf.common.ui.client.ICustomCell;
 import com.hiperf.common.ui.client.IFieldInfo;
 import com.hiperf.common.ui.client.ILinkedCell;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IPanelMediator;
 import com.hiperf.common.ui.client.IUpdateHandler;
 import com.hiperf.common.ui.client.IWrappedObjectForm;

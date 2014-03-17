@@ -2,6 +2,8 @@ package com.hiperf.common.ui.client;
 
 import java.util.Date;
 
+import org.gwtgen.api.shared.INakedObject;
+
 /*
  * Implement this interface if you want your POJO to maintain an audit log info (at each insert / update)
  * */

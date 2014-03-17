@@ -2,11 +2,13 @@ package com.hiperf.common.ui.client;
 
 import java.util.Collection;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.hiperf.common.ui.client.exception.AttributeNotFoundException;
 import com.hiperf.common.ui.client.exception.ParseException;
 
 /**
- * All wrapped objects implements this interface. For each object implementing {@link com.hiperf.common.ui.client.INakedObject},
+ * All wrapped objects implements this interface. For each object implementing {@link org.gwtgen.api.shared.INakedObject},
  * the generator configured in the file MyModule.gwt.xml will generate the wrapper
  * <p>
  * <b>example of MyModule.gwt.xml :</b><br>

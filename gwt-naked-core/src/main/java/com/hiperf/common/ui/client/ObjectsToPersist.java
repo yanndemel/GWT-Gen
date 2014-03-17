@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.user.client.rpc.IsSerializable;
 import com.hiperf.common.ui.shared.util.Id;
 

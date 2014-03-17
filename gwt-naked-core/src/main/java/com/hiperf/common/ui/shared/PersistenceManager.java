@@ -6,8 +6,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.hiperf.common.ui.client.IFieldInfo;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IWrapper;
 import com.hiperf.common.ui.shared.util.Id;
 

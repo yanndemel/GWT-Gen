@@ -1,7 +1,8 @@
 package com.hiperf.common.ui.client.event;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IUpdateHandler;
 import com.hiperf.common.ui.client.IWrappedObjectForm;
 import com.hiperf.common.ui.client.IWrapper;

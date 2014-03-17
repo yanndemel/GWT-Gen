@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.event.shared.SimpleEventBus;
@@ -21,7 +23,6 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 import com.hiperf.common.ui.client.IClassInfo;
 import com.hiperf.common.ui.client.ICommitHandler;
 import com.hiperf.common.ui.client.IFieldInfo;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IWrapper;
 import com.hiperf.common.ui.client.event.WrapperUpdatedEvent;
 import com.hiperf.common.ui.client.i18n.NakedConstants;

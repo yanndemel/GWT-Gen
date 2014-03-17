@@ -2,8 +2,9 @@ package com.hiperf.common.ui.client.service;
 
 import java.util.List;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.hiperf.common.ui.client.INakedObject;
 
 public interface RandomObjectServiceAsync {
 	

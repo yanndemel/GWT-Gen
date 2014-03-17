@@ -1,11 +1,13 @@
 package com.hiperf.common.ui.client;
 
+import org.gwtgen.api.shared.INakedObject;
+
 
 
 
 
 /**
- * Information retrieved from the {@link com.hiperf.common.ui.shared.annotation.UIClass} annotation
+ * Information retrieved from the {@link org.gwtgen.api.shared.UIClass} annotation
  *
  * Accessible for each class via {@link com.hiperf.common.ui.shared.WrapperContext#getClassInfoByName()}
  *

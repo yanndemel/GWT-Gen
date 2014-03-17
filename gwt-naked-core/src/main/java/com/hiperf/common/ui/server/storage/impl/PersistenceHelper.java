@@ -67,11 +67,11 @@ import javax.validation.ValidatorFactory;
 
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.lang3.StringUtils;
+import org.gwtgen.api.shared.INakedObject;
 import org.hibernate.exception.SQLGrammarException;
 
 import com.hiperf.common.ui.client.IAuditable;
 import com.hiperf.common.ui.client.ILazy;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.ObjectsToPersist;
 import com.hiperf.common.ui.client.exception.PersistenceException;
 import com.hiperf.common.ui.server.UTF8Control;

@@ -1,7 +1,7 @@
 package com.hiperf.gwtjpa.test.table.basic.client;
 
-import com.hiperf.common.ui.client.INakedObject;
-import com.hiperf.common.ui.shared.annotation.UIAttribute;
+import org.gwtgen.api.shared.INakedObject;
+import org.gwtgen.api.shared.UIAttribute;
 
 public class B implements INakedObject {
 

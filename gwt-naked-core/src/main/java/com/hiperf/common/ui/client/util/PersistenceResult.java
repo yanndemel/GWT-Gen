@@ -3,7 +3,8 @@ package com.hiperf.common.ui.client.util;
 import java.util.List;
 import java.util.Map;
 
-import com.hiperf.common.ui.client.INakedObject;
+import org.gwtgen.api.shared.INakedObject;
+
 import com.hiperf.common.ui.shared.util.Id;
 
 public class PersistenceResult {

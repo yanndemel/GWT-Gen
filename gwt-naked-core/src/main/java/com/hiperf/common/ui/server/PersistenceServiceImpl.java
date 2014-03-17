@@ -7,8 +7,9 @@ import java.util.Map;
 
 import javax.servlet.http.HttpSession;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.ObjectsToPersist;
 import com.hiperf.common.ui.client.exception.PersistenceException;
 import com.hiperf.common.ui.client.service.PersistenceService;

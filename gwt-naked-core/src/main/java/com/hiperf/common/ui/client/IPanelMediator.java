@@ -1,5 +1,7 @@
 package com.hiperf.common.ui.client;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Widget;
 import com.hiperf.common.ui.client.widget.ICloseablePopupPanel;

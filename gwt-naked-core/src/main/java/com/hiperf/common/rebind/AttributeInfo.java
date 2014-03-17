@@ -3,8 +3,9 @@ package com.hiperf.common.rebind;
 import java.util.Arrays;
 import java.util.Set;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.dev.util.collect.HashSet;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IValidator;
 
 public class AttributeInfo {

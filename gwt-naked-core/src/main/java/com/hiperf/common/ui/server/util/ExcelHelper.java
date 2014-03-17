@@ -41,8 +41,8 @@ import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.gwtgen.api.shared.INakedObject;
 
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.server.storage.impl.PersistenceHelper;
 import com.hiperf.common.ui.shared.CommonUtil;
 import com.hiperf.common.ui.shared.IConstants;

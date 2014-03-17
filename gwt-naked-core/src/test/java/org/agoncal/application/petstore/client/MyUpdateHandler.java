@@ -1,9 +1,9 @@
 package org.agoncal.application.petstore.client;
 
 import org.agoncal.application.petstore.domain.Order;
+import org.gwtgen.api.shared.INakedObject;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IWrappedObjectForm;
 import com.hiperf.common.ui.client.IWrapper;
 import com.hiperf.common.ui.client.IWrapperListModel;

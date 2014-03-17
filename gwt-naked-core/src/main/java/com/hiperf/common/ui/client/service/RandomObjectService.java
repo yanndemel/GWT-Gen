@@ -2,10 +2,11 @@ package com.hiperf.common.ui.client.service;
 
 import java.util.List;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.exception.RandomObjectException;
 
 @RemoteServiceRelativePath("RandomObjectService")

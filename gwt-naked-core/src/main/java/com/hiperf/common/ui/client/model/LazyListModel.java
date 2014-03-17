@@ -3,8 +3,9 @@ package com.hiperf.common.ui.client.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.IWrapper;
 import com.hiperf.common.ui.client.event.HideLoadingPopupEvent;
 import com.hiperf.common.ui.client.event.TotalPagesEvent;

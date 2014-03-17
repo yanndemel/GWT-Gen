@@ -2,8 +2,9 @@ package com.hiperf.common.ui.shared.util;
 
 import java.util.List;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.user.client.rpc.IsSerializable;
-import com.hiperf.common.ui.client.INakedObject;
 
 public class NakedObjectsList implements IsSerializable {
 

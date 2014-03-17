@@ -1,8 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+<parent>
+		<groupId>org.gwtgen.petstore</groupId>
+  <artifactId>gwtgen-samples-parent</artifactId>
+  <version>1.0</version>
+	</parent>
 
-  <groupId>org.gwtgen.petstore</groupId>
   <artifactId>petstore-web</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
@@ -115,7 +119,8 @@
 						<module>org.gwtgen.petstore.PetStore</module>
 					</modules>
 					<compileSourcesArtifacts>
-						<compileSourcesArtifact>com.hiperf:gwt-naked-core</compileSourcesArtifact>
+						<compileSourcesArtifact>org.gwtgen:gwtgen-api</compileSourcesArtifact>
+						<compileSourcesArtifact>org.gwtgen:gwt-naked-core</compileSourcesArtifact>
 						<compileSourcesArtifact>org.gwtgen.petstore:petstore-common</compileSourcesArtifact>
 					</compileSourcesArtifacts>
 					<warSourceDirectory>war</warSourceDirectory>
@@ -146,9 +151,13 @@
 			<artifactId>gwt-servlet</artifactId>
 			<version>${gwt.version}</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.gwtgen</groupId>
+			<artifactId>gwtgen-api</artifactId>
+			<version>1.0</version>
+		</dependency>
   	<dependency>
-  		<groupId>com.hiperf</groupId>
+  		<groupId>org.gwtgen</groupId>
 		<artifactId>gwt-naked-core</artifactId>
 		<version>${gwt.version}</version>
   	</dependency>

@@ -4,8 +4,9 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.hiperf.common.ui.client.AbstractLazyCollection;
-import com.hiperf.common.ui.client.INakedObject;
 
 public class LazySet<T extends INakedObject> extends AbstractLazyCollection<T> implements Set {
 

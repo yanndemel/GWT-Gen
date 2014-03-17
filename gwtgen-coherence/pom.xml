@@ -1,8 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.hiperf.gwtgen</groupId>
+  <parent>
+		<groupId>org.gwtgen</groupId>
+		<artifactId>gwtgen-parent</artifactId>
+		<version>1.0</version>
+  </parent>
   <artifactId>gwtgen-coherence</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -11,6 +14,7 @@
   <url>http://maven.apache.org</url>
 
 <properties>
+	<coherence.home>/Users/OCTO-YDE/Oracle/Middleware/Oracle_Home/coherence</coherence.home>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<gwt.version>2.6.0</gwt.version>
@@ -32,17 +36,24 @@
 						<groupId>javax</groupId>
 						<artifactId>javaee-api</artifactId>
 						<version>${javaee-api.version}</version>
+						<scope>provided</scope>
 					</dependency>
 					<dependency>
-				  		<groupId>com.hiperf</groupId>
+				  		<groupId>org.gwtgen</groupId>
 						<artifactId>gwt-naked-core</artifactId>
 						<version>${gwt.version}</version>
+					</dependency>
+					<dependency>
+				  		<groupId>org.gwtgen</groupId>
+						  <artifactId>gwtgen-api</artifactId>
+						  <version>1.0</version>
 					</dependency>
     <dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>coherence</artifactId>
-			<version>${coherence.version}</version>
-			<scope>provided</scope>
+			<version>12.1.2.0.0.0</version>	
+			<scope>system</scope>
+			<systemPath>${coherence.home}/lib/coherence.jar</systemPath>	
 		</dependency>
 		<dependency>
 			<groupId>com.google.gwt</groupId>

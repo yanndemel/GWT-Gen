@@ -1,8 +1,9 @@
 package org.agoncal.application.petstore.client;
 
+import org.gwtgen.api.shared.MessagesProvider;
+
 import com.google.gwt.core.client.GWT;
 import com.hiperf.common.ui.client.INakedLabels;
-import com.hiperf.common.ui.shared.annotation.MessagesProvider;
 
 @MessagesProvider(name = "org.agoncal.application.petstore.client.Constants.constants")
 public class Constants implements INakedLabels {

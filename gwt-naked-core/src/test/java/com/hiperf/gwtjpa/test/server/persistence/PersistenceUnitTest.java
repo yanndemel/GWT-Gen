@@ -27,11 +27,11 @@ import org.agoncal.application.petstore.domain.Item;
 import org.agoncal.application.petstore.domain.Order;
 import org.agoncal.application.petstore.domain.OrderLine;
 import org.agoncal.application.petstore.domain.Product;
+import org.gwtgen.api.shared.INakedObject;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.ObjectsToPersist;
 import com.hiperf.common.ui.client.exception.PersistenceException;
 import com.hiperf.common.ui.server.listener.GlobalParams;

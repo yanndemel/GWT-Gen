@@ -9,6 +9,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import org.gwtgen.api.shared.INakedObject;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
@@ -26,7 +28,6 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Tree;
 import com.google.gwt.user.client.ui.TreeItem;
 import com.google.gwt.user.client.ui.VerticalPanel;
-import com.hiperf.common.ui.client.INakedObject;
 import com.hiperf.common.ui.client.i18n.NakedConstants;
 import com.hiperf.common.ui.client.widget.TablePanel.PendingModifsImage;
 import com.hiperf.common.ui.shared.WrappedObjectsRepository;
